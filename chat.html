@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Scavenge - Chat</title>
+        <meta content="description" content="Join the chat after you get back from you Scvenge. Share more about your discoveries and talk about your next adventure.">
+        <meta name="keywords" content="Scavenge, chat, talk, adventure, fun, friends, group chat">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="logoHead">
+                <img width="100px">
+                <h1>Scavenge</h1>
+                <h2>Touch Grass</h2>
+
+                <nav>
+                    <a href="quests.html">
+                        <button>
+                            <p>Quests</p>
+                        </button>
+                    </a>
+                    <a href="junkyard.html">
+                        <button>
+                            <p>Junkyard</p>
+                        </button>
+                    </a>
+                    <a href="garage.html">
+                        <button>
+                            <p>Garage</p>
+                        </button>
+                    </a>
+                    <a href="leaderboard.html">
+                        <button>
+                            <p>Leaderboard</p>
+                        </button>
+                    </a>
+                    <a href="shop.html">
+                        <button>
+                            <p>Shop</p>
+                        </button>
+                    </a>
+                    <a href="chat.html">
+                        <button>
+                            <p>Chat</p>
+                        </button>
+                    </a>
+                    <a href="settings.html">
+                        <button>
+                            <p>Settings</p>
+                        </button>
+                    </a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="contentA">
+            <div class="messages" id="messages"></div>
+            <div class="chatInput">
+                <input id="messageInput" type="text" placeholder="Send a message.">
+            </div>
+            <button onclick="sendMessage()"></button>
+        </div>
+        <div class="mnmbers">
+            <div class="membersHeader">
+                Members
+            </div>
+            <div id="memberList"></div>
+        </div>
+        <script src="chatscript.js"></script>
+    </body>
+</html>

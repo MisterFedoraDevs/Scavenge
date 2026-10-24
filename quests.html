@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Scavenge</title>
+        <meta name="description" content="Get the piece of junk that you should be looking for right now.">
+        <meta name="keywords" content="Scavenge, quests, scavenger hunt, objects, daily object, junkyard posts">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="logoHead">
+                <img width="100px">
+                <h1>Scavenge</h1>
+                <h2>Touch Grass</h2>
+
+                <nav>
+                    <a href="quests.html">
+                        <button>
+                            <p>Quests</p>
+                        </button>
+                    </a>
+                    <a href="junkyard.html">
+                        <button>
+                            <p>Junkyard</p>
+                        </button>
+                    </a>
+                    <a href="garage.html">
+                        <button>
+                            <p>Garage</p>
+                        </button>
+                    </a>
+                    <a href="leaderboard.html">
+                        <button>
+                            <p>Leaderboard</p>
+                        </button>
+                    </a>
+                    <a href="shop.html">
+                        <button>
+                            <p>Shop</p>
+                        </button>
+                    </a>
+                    <a href="chat.html">
+                        <button>
+                            <p>Chat</p>
+                        </button>
+                    </a>
+                    <a href="settings.html">
+                        <button>
+                            <p>Settings</p>
+                        </button>
+                    </a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="contentA">
+            <div class="currentQuest">
+                <h3>CURRENT PIECE OF JUNK</h3>
+                <div class="questWord" id="questWord">
+                    
+                </div>
+                <div class="questDescription" id="questDesctiption">
+
+                </div>
+                <button>
+                    Submit Your Junk
+                </button>
+            </div>
+            <div class="scavengeStats">
+                <div class="statsSection">
+                    <div class="statNumber" id="completedQuests"></div>
+                    <div c;ass="statLabel">Completed Quests</div>
+                </div>
+            </div>
+
+            <div class="scavengeStats">
+                <div class="statsSection">
+                    <div class="statNumber" id="totalPoints"></div>
+                    <div c;ass="statLabel">Points Earned</div>
+                </div>
+            </div>
+
+            <div class="scavengeStats">
+                <div class="statsSection">
+                    <div class="statNumber" id="currentStreak"></div>
+                    <div c;ass="statLabel">Streak</div>
+                </div>
+            </div>
+            
+            <h2>Your Discoveries</h2>
+            <div class="junkPosts" id="junkHistory"></div>
+        </div>
+    <script src="script.js"></script>
+    </body>
+</html>

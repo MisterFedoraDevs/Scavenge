@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="logoHead">
+                <img width="100px">
+                <h1>Scavenge</h1>
+                <h2>Touch Grass</h2>
+
+                <nav>
+                    <a href="quests.html">
+                        <button>
+                            <p>Quests</p>
+                        </button>
+                    </a>
+                    <a href="junkyard.html">
+                        <button>
+                            <p>Junkyard</p>
+                        </button>
+                    </a>
+                    <a href="garage.html">
+                        <button>
+                            <p>Garage</p>
+                        </button>
+                    </a>
+                    <a href="leaderboard.html">
+                        <button>
+                            <p>Leaderboard</p>
+                        </button>
+                    </a>
+                    <a href="shop.html">
+                        <button>
+                            <p>Shop</p>
+                        </button>
+                    </a>
+                    <a href="chat.html">
+                        <button>
+                            <p>Chat</p>
+                        </button>
+                    </a>
+                    <a href="settings.html">
+                        <button>
+                            <p>Settings</p>
+                        </button>
+                    </a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="contentA">
+            <div class="profileCard">
+                <div class="banner" id="banner"></div>
+
+                <div class="profileBody">
+                    <div>
+                        <span class="username" id="usenrame"></span>
+                        <span class="chatTag" id="chatTag"></span>
+                    </div>
+                    <p class="profileDscription" id="profileDescription"></p>
+
+                    <div class="profileStats">
+                        <div class="stat"></div>
+                        <div class="statNumber" id="currentStreak"></div>
+                        <div class="statName">Curren Streak</div>
+                        <div class="stat"></div>
+                        <div class="statNumber" id="piecesOfJunk"></div>
+                        <div class="statName">Pieces of Junk</div>
+                        <div class="stat"></div>
+                        <div class="statNumber" id="currentRank"></div>
+                        <div class="statName">Rank</div>
+                    </div>
+                </div>
+            </div>
+            <div class="customizationOptions">
+                <h2>Customization</h2>
+                <div class-customizationGrid>
+                    <div class="option">
+                        <h3>Username Color</h3>
+                        <select id="usernameColor">
+                            <option id="achievementColor1" value="#758A48">Green</option>
+                            <option id="achievementColor1" value="#BO7C57">Light Brown</option>
+                            <option id="achievementColor1" value="#76583F">Brown</option>
+                            <option id="achievementColor1" value="#2B718A">Blue</option>
+                        </select>
+                    </div>
+                <div class="option">
+                    <h3>Username Tag</h3>
+                        <select id="usernameColor">
+                            <option id="junkyardOwnerTag">Junkyard Owner</option>
+                            <option id="junkyardStaffTag">Junkyard Employee</option>
+                            <option id="sellerTag">Seller</option>
+                            <option>Scavenger</option>
+                        </select>
+                </div>
+                <div class="option">
+                    <h3>Theme</h3>
+                        <select id="usernameColor">
+                            <option id="nightExplorerTheme">Night Explorer</option>
+                            <option id="fotestTheme">Forest</option>
+                            <option id="sunsetTheme">Sunset</option>
+                            <option>Defualt</option>
+                        </select>
+                </div>
+                <div class="option">     
+                <h3>Font</h3>
+                        <select id="usernameColor">
+                            <option id="handwrittenFont">Handwritten</option>
+                            <option id="logBookFont">Log Book</option>
+                            <option id="unreadableFont">Unreadable</option>
+                            <option>Defualt</option>
+                        </select>
+                </div>
+            </div>
+            <button class="saveButton" onclick="saveChanges()">Save Changes</button>
+        </div>
+        <div class="contentB">
+            <h2>Junk Collection</h2>
+            <div class="junkCollection">
+                <div class="junkDiscovered">
+                    <img id="recentJunkCollectedImage1" src="">
+                    <h4 id="recentJunkCollectedTitle1"></h4>
+                </div>
+                <div class="junkDiscovered">
+                    <img id="recentJunkCollectedImage2" src="">
+                    <h4 id="recentJunkCollectedTitle2"></h4>
+                </div>
+                <div class="junkDiscovered">
+                    <img id="recentJunkCollectedImage3" src="">
+                    <h4 id="recentJunkCollectedTitle3"></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    </body>
+</html>

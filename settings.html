@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta name="description" content="Change your settings for Scavage.">
+        <meta name="keywords" content="Scavage, settings, quest notifications, profile visibility, accessibility, accessibility settings, hack club">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="logoHead">
+                <img width="100px">
+                <h1>Scavenge</h1>
+                <h2>Touch Grass</h2>
+
+                <nav>
+                    <a href="quests.html">
+                        <button>
+                            <p>Quests</p>
+                        </button>
+                    </a>
+                    <a href="junkyard.html">
+                        <button>
+                            <p>Junkyard</p>
+                        </button>
+                    </a>
+                    <a href="garage.html">
+                        <button>
+                            <p>Garage</p>
+                        </button>
+                    </a>
+                    <a href="leaderboard.html">
+                        <button>
+                            <p>Leaderboard</p>
+                        </button>
+                    </a>
+                    <a href="shop.html">
+                        <button>
+                            <p>Shop</p>
+                        </button>
+                    </a>
+                    <a href="chat.html">
+                        <button>
+                            <p>Chat</p>
+                        </button>
+                    </a>
+                    <a href="settings.html">
+                        <button>
+                            <p>Settings</p>
+                        </button>
+                    </a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="contentA">
+            <div class="settingsCard">
+                <div class="banner" id="banner">
+                    <div class="settingsBody">
+                        <div class="settingsCard">
+                            <h2>Account</h2>
+                            <div class="setting">
+                                <div class="settingName">Username</div>
+                                <div class="settingDescription">Managed with Hack Club Auth</div>
+                            </div>
+                            <input id="username" type="text" value="" disabled></input>
+                        
+                            <div class="setting">
+                                <div class="settingName">Email</div>
+                                <div class="settingDescription">Get our newsletter, updates, and reminders sent to your inbox.</div>
+                            </div>
+                            <input id="userEmail" type="email" value="" placeholder="scavenge@scavenge.com">
+                        </div>
+                        <div class="settingsCard">
+                            <h2>Notifications</h2>
+                            <div class="setting">
+                                <div class="settingName">Quest Notifications</div>
+                                <div class="settingDescription">Get notified when you get a new quest.</div>
+                            </div>
+                            <input type="checkbox" class="toggle" checked>
+                        </div>
+                        <div class="setting">
+                            <div class="settingName">Chat Mentions</div>
+                            <div class="settingDescription">Get notified when you get a message in chat.</div>
+                        </div>
+                        <div class="settingsCard">
+                            <h2>Privacy</h2>
+                            <div class="setting">
+                                <div class="settingName">Profile Visibility</div>
+                                <div class="settingDescription">Choose who can see your profile.</div>
+                            </div>
+                            <select>
+                                <option>Public</option>
+                                <option>Friends</option>
+                                <option>Privte</option>
+                            </select>
+                        </div>
+                        <div class="setting">
+                            <div class="settingName">Show Current Streak</div>
+                            <div class="settingDescription">Show other Hack Clubbers your Scavenge streak on your profile.</div>
+                        </div>
+                        <input type="checkbox" class="toggle" checked>
+                    </div>
+                    <div class="settingsCard">
+                        <div class="setting">
+                            <div class="settingName">Font Size</div>
+                        <select>
+                            <option>X-Large</option>
+                            <option>Large</option>
+                            <option selected>Medium</option>
+                            <option>Small</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="settingsCard">
+                        <h2>Connected Accounts</h2>
+                        <div class="setting">
+                            <div class="settingName">Hack Club</div>
+                            <div class="settingDescription">Connect your Scavenge account with your Hack Club account.</div>
+                        </div>
+                        <button class="scavengeButton">Manage</button>
+                    </div>
+                    <div class="settingsCard">
+                        <h2>Danger Zone</h2>
+                        <div class="settingName">Delete Your Account</div>
+                        <div class="settingDescription">We don't we to see you stop touching grass, but if you need to permantly delete your account the button is below.</div>
+                    </div>
+                    <button class="deleteAccountButton">Delete</button>
+                </div>
+            </div>
+            <button class="settingsSaveButton" onclick="saveSettings()">Save Settings</button>
+        </div>
+    <script src="settingsScript.js"></script>
+    </body>
+</html>

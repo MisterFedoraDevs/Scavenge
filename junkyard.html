@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Scavenge - Quests</title>
+        <meta name="description" content="See the current piece of junk everyone is looking for right now.">
+        <meta name="keywords" content="scavenger hunt, quests, challenges, looking for stuff, fun, touch grass">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    </head>
+        <div class="sidebar">
+            <div class="logoHead">
+                <img width="100px">
+                <h1>Scavenge</h1>
+                <h2>Touch Grass</h2>
+
+                <nav>
+                    <a href="quests.html">
+                        <button>
+                            <p>Quests</p>
+                        </button>
+                    </a>
+                    <a href="junkyard.html">
+                        <button>
+                            <p>Junkyard</p>
+                        </button>
+                    </a>
+                    <a href="garage.html">
+                        <button>
+                            <p>Garage</p>
+                        </button>
+                    </a>
+                    <a href="leaderboard.html">
+                        <button>
+                            <p>Leaderboard</p>
+                        </button>
+                    </a>
+                    <a href="shop.html">
+                        <button>
+                            <p>Shop</p>
+                        </button>
+                    </a>
+                    <a href="chat.html">
+                        <button>
+                            <p>Chat</p>
+                        </button>
+                    </a>
+                    <a href="settings.html">
+                        <button>
+                            <p>Settings</p>
+                        </button>
+                    </a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="contentA">
+            <div class="junkyardTitle">
+                <h3>Junkyard</h3>
+                <p>Look at other's people's junk and see if you like any of it.</p>
+            </div>
+
+            <div class="junkPosts" id="feed"></div>
+        </div>
+        <div class="bigJunkPost" id="bigJunkPost">
+            <button class="close" id="closePost">X</button>
+
+            <div class="junkPostA">
+                <img id="junkImage">
+                <div class="junkPostDiv">
+                    <div class="junkPostUser" id="junkPostUser"></div>
+                    <div class="junkPostTitle" id="junkPostTitle"></div>
+                    <div class="junkPostDescription" id="junkPostDescription"></div>
+                    <div class="junkPostStory" id="junkPostStory"></div>
+                </div>
+            </div>
+        </div>
+    <script src="junkyardscript.js"></script>
+    </body>
+</html>
